@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	</head>
+
+	<body onload="loadCards()">
+    	<div class="container">
+			
+			<!-- Navigation 
+            navbar-light: Light coloured navbar
+			bg-light: Background light
+			border: Adds a border
+			rounded: Rounds the border
+			mt-4: Margin top 1.5 time the spacer unit
+			mb-4: Margin bottom
+            -->
+			<nav class="navbar navbar-light bg-light border rounded mt-4 mb-4">
+				<a class="navbar-brand" href="#">
+					<img src="https://ulas.co.uk/uploads/organisation/logo/55f84a0f6c6f63290b020000/kcl.png" width="77" height="54	" class="d-inline-block align-middle" alt="">
+					<span class="ml-2">King's College London -  Module Selection</span>
+                    
+    			</a>
+			</nav>
+
+			<!-- End navigation -->
+
+			<div class="jumbotron">
+				<h1 class="display-4">Welcome, student!</h1>
+				<p class="lead">Welcome to the 2017/2018 module selection page.</p>
+				<hr class="my-4">
+				<p>	To proceed, select your course below.</p>
+					<p>You will then be presented with a list of modules available to study.</p>
+					<p>Optional modules are listed on the left.</p>
+					<p>Compulsory modules and modules you have selected appear on the right.</p>
+					<p>Click to expand each module card to discover more information about  each modules to help you decide which you'd like to study.
+				</p>
+				<p class="lead">
+					<a class="btn btn-primary btn-lg mt-2" href="#" role="button">Computer Science</a>
+					<a class="btn btn-primary btn-lg mt-2" href="#" role="button">Computer Science w/ Management</a>
+				</p>
+	</div>
+			
+		<!-- Notice -->
+		<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    		<span aria-hidden="true">&times;</span>
+			</button>
+
+			<h4 class="alert-heading">Note</h4>
+
+    		<p>You can select up to two optional modules from other level-6 (third year) modules offered by the Department of Informatics (or one module within the Department, and one 15-credit module offered by another department), subject to Departmental approval, as long as in total you take six taught modules (with a balance of three optional modules in each semester).</p>
+			
+		</div> <!-- End notice -->
+
+			<!-- Begin columns -->
+
+			<div class="container">
+
+				<div class="row">
+					<div class="col pb-3">
+						Available
+					</div>
+					<div class="col pb-3">
+						Selected
+					</div>
+				</div>
+
+  				<div class="row">
+    				<div id="leftColumn" class="col pb-3 mb-3 pt-3 border">
+
+    					
+
+    				</div> <!-- End column 1 -->
+
+
+    				<div id="rightColumn" class="col pb-3 mb-3 pt-3 border">
+
+    				</div>
+
+    			</div>
+
+    		</div>
+
+    			<p></p>
+		
+		<!-- Submit Button -->	
+		<div class="btn btn-warning fixed-bottom" id="submit" data-toggle="modal" data-target="#submitModal">90 of 120 credits selected - Submit</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      
+		      <!--
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		  -->
+		      <div class="modal-body">
+		        You must select 120 credits to continue.<br>
+		        You should have 4 modules each semester.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		</div><!-- End page container -->
+
+    	<!-- Optional JavaScript -->
+
+		<script type="text/javascript" src="js/loadCard.js"></script>
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  	</body>
+</html>

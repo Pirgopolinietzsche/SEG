@@ -1,0 +1,17 @@
+Stage 1.	Welcome
+
+Stage 2.	Choose from Computer Science or Computer Science with Management
+
+Stage 3.	Semester 1 information page
+
+Stage 4.	Select two Semester 1 modules
+
+Stage 5.	Show selection, confirm selection
+
+Stage 6.	Semester 2 information page
+
+Stage 7.	Select two Semester 2 modules
+
+Stage 8. 	Show selection, confirm selection
+
+Stage 9.	Show all selections, close
