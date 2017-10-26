@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	</head>
+
+	<body>
+    	<div class="container pb-5">
+			
+			<!-- Navigation 
+            navbar-light: Light coloured navbar
+			bg-light: Background light
+			border: Adds a border
+			rounded: Rounds the border
+			mt-4: Margin top 1.5 time the spacer unit
+			mb-4: Margin bottom
+            -->
+			<nav class="navbar navbar-light bg-light border rounded mt-4 mb-4">
+				<a class="navbar-brand" href="#">
+					<img src="https://ulas.co.uk/uploads/organisation/logo/55f84a0f6c6f63290b020000/kcl.png" width="77" height="54	" class="d-inline-block align-middle" alt="">
+					<span class="ml-2">King's College London -  Module Selection</span>
+                    
+    			</a>
+			</nav>
+
+			<div class="jumbotron">
+				<h1 class="display-4">Welcome, student!</h1>
+				<p class="lead">Welcome to the 2017/2018 module selection page.</p>
+				<hr class="my-4">
+				<p>	To proceed, select your course below.</p>
+					<p>You will then be presented with a list of modules available to study.</p>
+					<p>Optional modules are listed on the left.</p>
+					<p>Compulsory modules and modules you have selected appear on the right.</p>
+					<p>Click to expand each module card to discover more information about  each modules to help you decide which you'd like to study.
+				</p>
+				<p class="lead">
+					<a class="btn btn-primary btn-lg mt-2" href="#" role="button">Computer Science</a>
+					<a class="btn btn-primary btn-lg mt-2" href="#" role="button">Computer Science w/ Management</a>
+				</p>
+	</div>
+			
+		<!-- Notice -->
+		<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    		<span aria-hidden="true">&times;</span>
+			</button>
+
+			<h4 class="alert-heading">Note</h4>
+
+    		<p>You can select up to two optional modules from other level-6 (third year) modules offered by the Department of Informatics (or one module within the Department, and one 15-credit module offered by another department), subject to Departmental approval, as long as in total you take six taught modules (with a balance of three optional modules in each semester).</p>
+			
+		</div> <!-- End notice -->
+
+
+			<!-- Module Cards -->
+			<div class="card" style="width: 20rem;">
+
+			<!-- Card Header -->
+			<div class="card-header">
+				<h5 class="card-title">6CCS3PRJ Individual Project</h5>
+				
+				<!-- Roles
+				tablist role acts as a composite user interface widget
+				https://www.w3.org/TR/wai-aria/roles#tablist
+				-->
+				
+				<div class="collapse prjCollapse">
+					<ul class="nav nav-tabs card-header-tabs" id="home-tab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Summary</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">More info</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="tab-content collapse prjCollapse" id="PRJTabContent">
+
+				<!-- Tab 1 Content -->
+				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+					<div class="card-body">
+						
+						<p class="card-text">The project provides you with an opportunity to engage in a self-managed and detailed investigation of an aspect of computer science. A substantial piece of written work will be produced and a significant piece of software.</p>
+
+						<p class="card-text">In addition to extending their knowledge of computer science, you will develop a number of additional, transferable skills in relation to: literature searching, retrieval and analysis, report writing, the oral presentation of material, project planning and management.</p>
+					</div>
+				</div> <!-- End tab 1 -->
+
+				<!-- Tab 2 Content -->
+				<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+					<div class="card-body">
+
+					  <p class="card-text"><strong>Credit value:</strong> 30</p>
+
+					  <p class="card-text"><strong>Coordinator:</strong> Dr Natalia Criado-Pacheco (office hours)</p>
+
+					  <p class="card-text"><strong>Semester:</strong> 1 and 2</p>
+
+					  <p class="card-text"><strong>Assessment:</strong> 100% final report. Attendance at an oral presentation is compulsory for passing the module (Marking Model 1 - Blind Double Marking)</p>
+
+					  <p class="card-text"><strong>Formative assessment:</strong> Four project reports and one project background and specification report</p>
+
+					  <p class="card-text"><strong>Supervision:</strong> There are no weekly scheduled lectures for the module; a member of the academic staff supervises your project work. Project titles are released at the beginning of the academic year.</p>
+
+					  <p class="card-text"><strong>MSci students:</strong> If you started the MSci Computer Science programme in September 2014 or earlier you can take 6CCS3PRJ as a replacement module for two of your optional taught modules. Choosing 6CCS3PRJ will allow you the possibility of transferring to BSc Computer Science programme during Year 3, should you wish (transfer to be undertaken by the end of the May examinations).<br/>
+					  For students starting MSci Computer Science from September 2015 onwards, 6CCS3PRJ is compulsory.</p>
+
+					</div>
+				</div> <!-- End tab 2 -->
+			</div> <!-- End tabbed content -->
+
+			<!-- Card Footer -->
+			<div class="card-footer">
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".prjCollapse" aria-expanded="false" aria-controls="collapseExample">Expand</button>
+				<div class="btn btn-primary" id="test">Select Module</div>
+
+				
+				<!-- Experimenting with jQuery toggle to change button text
+				http://api.jquery.com/toggle-event/
+
+				-->
+				<script>
+					$(function(){
+					   $("#test").click(function () {
+						  $(this).text(function(i, text){
+							  return text === "PUSH ME" ? "DON'T PUSH ME" : "PUSH ME";
+						  })
+					   });
+					})
+					//$( "#6CCS3PRJ" ).toggle(
+					//	function() { 
+					//		$(this).text("DON'T PUSH ME");}, 
+					//	function() {
+					//		$(this).text("PUSH ME");}
+					//);
+				</script>
+				
+			</div>
+
+  			</div> <!-- End card -->
+
+			<p></p>
+		
+		<!-- Submit Button -->	
+		<div class="btn btn-warning fixed-bottom" id="submit" data-toggle="modal" data-target="#submitModal">90 of 120 credits selected - Submit</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      
+		      <!--
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		  -->
+		      <div class="modal-body">
+		        You must select 120 credits to continue.<br>
+		        You should have 4 modules each semester.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div><!-- End page container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  </body>
+</html>
